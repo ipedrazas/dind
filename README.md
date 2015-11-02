@@ -1,2 +1,2 @@
 # dind
-Minimal Docker in Docker
+Minimal Docker in Docker based on alpine 3.2
