@@ -1,0 +1,9 @@
+
+publish:
+  docker:
+    username: $$DOCKER_EMAIL
+    password: $$DOCKER_PASSWORD
+    email: $$DOCKER_EMAIL
+    repo: ipedrazas/dind
+    tag: $$CI_BUILD_NUMBER
+    file: Dockerfile
