@@ -5,6 +5,10 @@ publish:
     password: $$DOCKER_PASSWORD
     email: $$DOCKER_EMAIL
     repo: ipedrazas/dind
-    tag: $$CI_BUILD_NUMBER
+    tag:
+      - latest
+      - $$CI_BUILD_NUMBER
+    environment:
+      - DOCKER_LAUNCH_DEBUG=true
     when:
       branch: master
